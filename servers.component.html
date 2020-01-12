@@ -1,0 +1,27 @@
+<!-- <div class="container">
+    <div class= "row">
+       <div class = col-sm-4> The server with {{serverid}} is {{serverstatus}}</div>
+       <div class = col-sm-4>
+            <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onViewProducts()">View Products</button></div>
+        <div class = col-sm-4> {{getserverstatus()}}</div>
+  
+    <div class ="row">
+        <div class = col-xs-4>
+            <p [innerText]="allowNewServer"> </p> 
+        </div>  
+        <div class= col-xs-4>    
+            <button class="btn btn-primary" (click)="onViewProducts()">Lop you Sunil</button></div>
+            {{viewProducts}} 
+        <div class= col-xs-4> 
+            <input type = "text" [(ngModel)]="name">
+            Hello {{name}}
+            <p *ngIf="onViewProducts">Thanks for entering {{name}}</p>
+        </div>
+    </div>
+</div> -->
+<header class = "jumbotron">
+    <button class ="btn btn-warning" (click)="onButtonClick()"> click here</button>
+    <br> <br>
+    <input type= "text" [(ngModel)]="twoway">
+    <p *ngIf="buttonClick">Name submitted is {{twoway}}</p>
+</header>
